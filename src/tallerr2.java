@@ -30,7 +30,7 @@ public class tallerr2 extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         menuPrincipal = new javax.swing.JMenu();
         jMenuSalir = new javax.swing.JMenuItem();
-        menuCrearMatriz = new javax.swing.JMenu();
+        menuMatriz = new javax.swing.JMenu();
         menuAdivinarNumero = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
 
@@ -43,10 +43,20 @@ public class tallerr2 extends javax.swing.JFrame {
 
         jMenuBar1.add(menuPrincipal);
 
-        menuCrearMatriz.setText("Juegos");
+        menuMatriz.setText("Juegos");
+        menuMatriz.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuMatrizActionPerformed(evt);
+            }
+        });
 
         menuAdivinarNumero.setText("Adivinar");
-        menuCrearMatriz.add(menuAdivinarNumero);
+        menuAdivinarNumero.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuAdivinarNumeroActionPerformed(evt);
+            }
+        });
+        menuMatriz.add(menuAdivinarNumero);
 
         jMenuItem2.setText("Matriz");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
@@ -54,9 +64,9 @@ public class tallerr2 extends javax.swing.JFrame {
                 jMenuItem2ActionPerformed(evt);
             }
         });
-        menuCrearMatriz.add(jMenuItem2);
+        menuMatriz.add(jMenuItem2);
 
-        jMenuBar1.add(menuCrearMatriz);
+        jMenuBar1.add(menuMatriz);
 
         setJMenuBar(jMenuBar1);
 
@@ -77,6 +87,14 @@ public class tallerr2 extends javax.swing.JFrame {
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem2ActionPerformed
+
+    private void menuMatrizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuMatrizActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_menuMatrizActionPerformed
+
+    private void menuAdivinarNumeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuAdivinarNumeroActionPerformed
+      
+    }//GEN-LAST:event_menuAdivinarNumeroActionPerformed
 
     /**
      * @param args the command line arguments
@@ -118,7 +136,7 @@ public class tallerr2 extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuSalir;
     private javax.swing.JMenuItem menuAdivinarNumero;
-    private javax.swing.JMenu menuCrearMatriz;
+    private javax.swing.JMenu menuMatriz;
     private javax.swing.JMenu menuPrincipal;
     // End of variables declaration//GEN-END:variables
 }
